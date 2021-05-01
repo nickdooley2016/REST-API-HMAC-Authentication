@@ -1,7 +1,7 @@
 # REST-API-HMAC-Authentication
 How to generate a HMAC signature for your REST API request and how to authenticate the received HMAC signature in C# .Net
 
-On the client side use generateHMACSignature() to generate your HMAC signature and add the string to the request's header.
+On the client side use generateHMACSignature() to generate your HMAC signature and add the string to the request's header as the parameter "Auth".
 
 On the server side feed the incoming request into CheckIncomingAPIRequest() to authenticate the user's API request.
 
